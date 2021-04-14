@@ -49,5 +49,8 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:taniarascia/webpack-boilerplate"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }

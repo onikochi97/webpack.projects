@@ -2,6 +2,16 @@
   font-family: 'Inter';
   src: url('../fonts/Inter.ttf');
 }
-
 @import 'variables';
-@import 'scaffolding';
+body {
+  background-color: red;
+}
+header {
+  position: absolute;
+  height: 134px;
+  width: 1920px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  color: red;
+}
