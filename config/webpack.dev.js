@@ -27,7 +27,13 @@ module.exports = merge(common, {
         test: /\.(scss|css)$/,
         use: [
           'style-loader',
-          {loader: 'css-loader', options: {sourceMap: true, importLoaders: 1, modules: true }},
+          {loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              importLoaders: 1,
+             // Здесь просто конфиг настроен на хеширвоание классов и их надо по особенному подключать, поэтому просто убираем, или ставим false. 
+            }
+          },
           {loader: 'postcss-loader', options: {sourceMap: true}},
           {loader: 'sass-loader', options: {sourceMap: true}},
         ],
