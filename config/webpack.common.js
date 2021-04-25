@@ -1,3 +1,4 @@
+const path = require("path");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -66,5 +67,10 @@ module.exports = {
       // Fonts and SVGs: Inline files
       { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
     ],
+  },
+  resolve: {
+    alias: {
+      images: path.join(__dirname, "../public"),
+    },
   },
 }
