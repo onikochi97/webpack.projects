@@ -1,0 +1,64 @@
+.header {
+  border-bottom: 2px solid #ddebda;
+  padding: 25px 0;
+  &__row,
+  &__side {
+    display: flex;
+    align-items: center;
+  }
+  &__row {
+    justify-content: space-between;
+  }
+  &__logo {
+    max-width: 101px;
+    max-height: 78px;
+  }
+  &__nav {
+    margin-left: 72px;
+  }
+  &__nav-link {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 20px;
+    color: #868fa4;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &__phones-item {
+    display: inline-block;
+    font-size: 20px;
+    color: #191919;
+    margin-left: 65px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &_icon {
+      position: relative;
+      padding-left: 43px;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        background: url(~images/svg/phone-icon.svg) no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.item {
+  width: 405px;
+  height: 200px;
+  margin: 20px 16px;
+  background: brown;
+}
